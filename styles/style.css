@@ -214,7 +214,7 @@ ol {
   position: relative;
   overflow-y: auto;
   block-size: 298px;
-  inline-size: 100%;
+  inline-size: 399px;
 }
 
 .content__list-item:not(:last-child) {
@@ -258,28 +258,33 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   flex-basis: 0;
+  padding-left: 2px;
   overflow: hidden;
 }
 
 .content__video-card-title {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   overflow: hidden;
   font-family: 'Oswald', serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
-  line-height: 100%;
+  line-height: 125%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 16.2px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
@@ -290,5 +295,6 @@ ol {
 }
 
 .more-button {
-  min-width: 399px;
+  width: calc(100% - 4px);
+  margin: 0 2px 2px;
 }
